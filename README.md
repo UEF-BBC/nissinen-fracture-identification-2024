@@ -4,7 +4,7 @@ An algorithmic approach for automated identification of fragility fractures from
 
 **Project description:**
 
-This project provides an example implementation for algorithmic identification of fragility fractures (humerus and wrist fractures) from a database containing register and radiological visits data (from a PACS system). The method is described in detail in two separate open-access publications (links below). The main code is in R language and the database queries are SQLite compatible SQL. The complete register or radiological visits data is first fetched using the SQL queries and then further filtered according to the different rule-based algorithms.
+This project provides an example implementation for algorithmic identification of humerus and wrist fractures from a database containing register and radiological visits data (from a PACS system). The method is described in detail in two open-access publications (links below). The main code is in R language, and the database queries are SQLite compatible SQL. The complete register or radiological visits data is first fetched using the SQL queries and then further filtered according to the different rule-based algorithms.
 
 **Original papers:**
 
