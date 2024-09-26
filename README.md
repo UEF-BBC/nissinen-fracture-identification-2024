@@ -31,4 +31,3 @@ Nissinen T, Sund R, Suoranta S, Kröger H, Väänänen SP. Identifying proximal 
 
 └── README.md
 
- An example implementation for algorithmic identification of fragility fractures from a database containing register and radiological visits data
