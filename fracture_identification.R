@@ -56,6 +56,10 @@ cat("Wrist combined A identified fractures: ", nrow(wrist_combined_a))
 # combine data from register and pacs queries
 wrist_combined_b_reg_part <- filter(wrist_register_data, pacs_exam_count == 0 & register_contact_count >= 3)
 wrist_combined_b_reg_part <- wrist_combined_b_reg_part[c('patient_id','index_date')]
+
+# rename exam_date to index_date for combining
+colnames(wrist_combined_a)[colnames(wrist_combined_a) == "exam_date"] ="index_date"
+
 wrist_combined_a_part <- wrist_combined_a[c('patient_id','index_date')]
 wrist_combined_b <- bind_rows(wrist_combined_b_reg_part, wrist_combined_a_part)
 cat("Wrist combined B identified fractures: ", nrow(wrist_combined_b))
