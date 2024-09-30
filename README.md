@@ -4,7 +4,7 @@ An algorithmic approach for automated identification of fragility fractures from
 
 **Project description:**
 
-This project provides an example implementation for algorithmic identification of humerus and wrist fractures from a database containing register and radiological visits data (from a PACS system). The method is described in detail in two open-access publications (links below). The main code is in R language, and the database queries are SQLite compatible SQL. The complete register or radiological visits data is first fetched using the SQL queries and then further filtered according to the different rule-based algorithms.
+This project provides an example implementation for algorithmic identification of humerus and wrist fractures from a database containing register and radiological visits data (from a PACS system). Automated identification of fragility fractures can streamline research, such as incidence statistics, prevention studies, and the development of fracture risk assessment models. The method is described in detail in two open-access publications (links below). The main code is in R language, and the database queries are SQLite compatible SQL. The complete register or radiological visits data is first fetched using the SQL queries and then filtered according to the different rule-based algorithms.
 
 **Original papers:**
 
@@ -31,3 +31,20 @@ Nissinen T, Sund R, Suoranta S, Kröger H, Väänänen SP. Identifying proximal 
 
 └── README.md
 
+**Example Database description:**
+
+This implementation expects a database with the following data content required by the algorithms.
+
+* _pacs_table_ - table containing radiography visits data
+    * _exam_id_ - unique identifier of the radiographic examination
+    * _patient_id_ - identifier of the patient
+    * _request_type_ - type if request ('emergency'/'elective')
+    * _request_date_ - date when the request for the examination was made (i.e. '2021-06-26')
+    * _exam_date_ - date when the examination took place
+    * _exam_type_ - type of the examination (i.e. 'ND1AA')
+
+* _register_table_ - table containing register contacts with diagnosis codes (ICD-10/ICPC2)
+    * _rownum_ - unique order number for the contact
+    * _index_date_ - date of the contact (diagnosis date)
+    * _diagnosis_code_ - ICD-10/ICPC2 diagnosis code (i.e. 'S422')
+    * _patient_id_ - identifier of the patient
