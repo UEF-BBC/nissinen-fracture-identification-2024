@@ -4,7 +4,7 @@ An algorithmic approach for automated identification of fragility fractures from
 
 **Project description:**
 
-This project provides an example implementation for algorithmic identification of humerus and wrist fractures from a database containing register and radiological visits data (from a PACS system). Automated identification of fragility fractures can streamline research, such as incidence statistics, prevention studies, and the development of fracture risk assessment models. The method is described in detail in two open-access publications (links below). The main code has versions for R language (fracture_identification.R) and Python (fracture_identification.py), and the database queries (*.sql) are SQLite compatible SQL. The complete register or radiological visits data is first fetched using the SQL queries and then filtered according to the different rule-based algorithms.
+This project provides an example implementation for algorithmic identification of humerus and wrist fractures from a database containing register and radiological visits data (from a PACS system). Automated identification of fragility fractures can streamline research, such as incidence statistics, prevention studies, and the development of fracture risk assessment models. The method is described in detail in two open-access publications (links below). The main code has versions for R language (fracture_identification.R) and Python (fracture_identification.py), and the database queries (*.sql) are in SQLite compatible SQL. The complete register or radiological visits data is first fetched using the SQL queries and then filtered according to the different rule-based algorithms.
 
 **Original papers:**
 
