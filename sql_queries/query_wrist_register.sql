@@ -9,7 +9,7 @@ SELECT
             AND ABS(JULIANDAY(r2.index_date) - JULIANDAY(r.index_date)) < 60
     ) AS register_contact_count,
     (
-        SELECT COUNT(DISTINCT p.ac) 
+        SELECT COUNT(DISTINCT p.exam_id) 
         FROM pacs_table p 
         WHERE p.patient_id = r.patient_id 
             AND p.exam_type IN ('ND1AA', 'ND1BA', 'ND1DA') 
