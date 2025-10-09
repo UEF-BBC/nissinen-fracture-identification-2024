@@ -10,7 +10,7 @@ This project provides an example implementation for algorithmic identification o
 
 [Nissinen T, Sund R, Suoranta S, Kröger H, Väänänen SP. Combining Register and Radiological Visits Data Allows to Reliably Identify Incident Wrist Fractures. Clinical Epidemiology 2023, 15:1001-1008](https://www.dovepress.com/combining-register-and-radiological-visits-data-allows-to-reliably-ide-peer-reviewed-fulltext-article-CLEP)
 
-[Nissinen T, Sund R, Suoranta S, Kröger H, Väänänen SP. Identifying proximal humerus fractures: an algorithmic approach using registers and radiological visit data. Osteoporos Int. 2025, 36(4):645-651] (https://link.springer.com/article/10.1007/s00198-025-07414-3)
+[Nissinen T, Sund R, Suoranta S, Kröger H, Väänänen SP. Identifying proximal humerus fractures: an algorithmic approach using registers and radiological visit data. Osteoporos Int. 2025, 36(4):645-651](https://link.springer.com/article/10.1007/s00198-025-07414-3)
 
 **Project structure:**
 
