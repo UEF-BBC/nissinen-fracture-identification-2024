@@ -38,6 +38,7 @@ This implementation expects a database with the following data content required 
 
 * _pacs_table_ - table containing radiography visits data
     * _exam_id_ - unique identifier of the radiographic examination
+    * _rownum_ - unique order number for the examination
     * _patient_id_ - identifier of the patient
     * _request_type_ - type if request ('emergency'/'elective')
     * _request_date_ - date when the request for the examination was made (i.e. '2021-06-26')
