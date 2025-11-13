@@ -50,3 +50,8 @@ This implementation expects a database with the following data content required 
     * _index_date_ - date of the contact (diagnosis date, SQLite time-value, e.g. '2021-06-28')
     * _diagnosis_code_ - ICD-10/ICPC2 diagnosis code (string, e.g. 'S422')
     * _patient_id_ - identifier of the patient (integer/string)
+
+**Author**
+
+Tomi Nissinen – main author and maintainer  
+GitHub: [@tnissinen](https://github.com/tnissinen)
