@@ -37,16 +37,16 @@ This project provides an example implementation for algorithmic identification o
 This implementation expects a database with the following data content required by the algorithms.
 
 * _pacs_table_ - table containing radiography visits data
-    * _exam_id_ - unique identifier of the radiographic examination
-    * _rownum_ - unique order number for the examination
-    * _patient_id_ - identifier of the patient
-    * _request_type_ - type if request ('emergency'/'elective')
-    * _request_date_ - date when the request for the examination was made (i.e. '2021-06-26')
-    * _exam_date_ - date when the examination took place
-    * _exam_type_ - type of the examination (i.e. 'ND1AA')
+    * _exam_id_ - unique identifier of the radiographic examination (integer/string)
+    * _rownum_ - unique order number for the examination (integer)
+    * _patient_id_ - identifier of the patient (integer/string)
+    * _request_type_ - type if request (string, 'emergency'/'elective')
+    * _request_date_ - date when the request for the examination was made (SQLite time-value, e.g. '2021-06-26', see https://sqlite.org/lang_datefunc.html)
+    * _exam_date_ - date when the examination took place (SQLite time-value, e.g. '2021-06-28')
+    * _exam_type_ - type of the examination (string, e.g. 'ND1AA')
 
 * _register_table_ - table containing register contacts with diagnosis codes (ICD-10/ICPC2)
-    * _rownum_ - unique order number for the contact
-    * _index_date_ - date of the contact (diagnosis date)
-    * _diagnosis_code_ - ICD-10/ICPC2 diagnosis code (i.e. 'S422')
-    * _patient_id_ - identifier of the patient
+    * _rownum_ - unique order number for the contact (integer)
+    * _index_date_ - date of the contact (diagnosis date, SQLite time-value, e.g. '2021-06-28')
+    * _diagnosis_code_ - ICD-10/ICPC2 diagnosis code (string, e.g. 'S422')
+    * _patient_id_ - identifier of the patient (integer/string)
