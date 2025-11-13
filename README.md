@@ -34,14 +34,14 @@ This project provides an example implementation for algorithmic identification o
 
 **Example Database description:**
 
-This implementation expects a database with the following data content required by the algorithms.
+This implementation expects a database with the following data content required by the algorithms. For the supported date formats, see SQLite time-value documentation (https://sqlite.org/lang_datefunc.html).
 
 * _pacs_table_ - table containing radiography visits data
     * _exam_id_ - unique identifier of the radiographic examination (integer/string)
     * _rownum_ - unique order number for the examination (integer)
     * _patient_id_ - identifier of the patient (integer/string)
     * _request_type_ - type if request (string, 'emergency'/'elective')
-    * _request_date_ - date when the request for the examination was made (SQLite time-value, e.g. '2021-06-26', see https://sqlite.org/lang_datefunc.html)
+    * _request_date_ - date when the request for the examination was made (SQLite time-value, e.g. '2021-06-26')
     * _exam_date_ - date when the examination took place (SQLite time-value, e.g. '2021-06-28')
     * _exam_type_ - type of the examination (string, e.g. 'ND1AA')
 
