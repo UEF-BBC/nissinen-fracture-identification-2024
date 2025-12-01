@@ -34,7 +34,7 @@ This project provides an example implementation for algorithmic identification o
 
 **Example Database description:**
 
-This implementation expects a database with the following data content required by the algorithms. For the supported date formats, see SQLite time-value documentation (https://sqlite.org/lang_datefunc.html). Other data types or formats may also work if the analysis code and/or SQL queries are adapted accordingly.
+This implementation expects a database with the following data content required by the algorithms. For the supported date formats, see SQLite time-value documentation (https://sqlite.org/lang_datefunc.html). Other data types or formats may also work if the analysis code and/or SQL queries are adapted accordingly. Note that the SQL queries include year range conditions (by default 2011-2023) that should be modified depending on the needs or data availability. 
 
 * _pacs_table_ - table containing radiography visits data
     * _exam_id_ - unique identifier of the radiographic examination (integer/string)
@@ -48,7 +48,7 @@ This implementation expects a database with the following data content required 
 * _register_table_ - table containing register contacts with diagnosis codes (ICD-10/ICPC2)
     * _rownum_ - unique order number for the contact (integer)
     * _index_date_ - date of the contact (diagnosis date, SQLite time-value, e.g. '2021-06-28')
-    * _diagnosis_code_ - ICD-10/ICPC2 diagnosis code (string, e.g. 'S422')
+    * _diagnosis_code_ - ICD-10/ICPC2 diagnosis code (string, the code expects a format without the period e.g. 'S422')
     * _patient_id_ - identifier of the patient (integer/string)
 
 **Author**
